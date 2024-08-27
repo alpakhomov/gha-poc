@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Retrieve secret
         env:
-          my_secret: ${{ sample-env.SAMPLE_SECRET }}
+          my_secret: ${{ secrets.SAMPLE_SECRET }}
         run: |
           echo "$my_secret"
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
