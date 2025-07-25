@@ -33,8 +33,7 @@ jobs:
     steps:
       - name: Print the input tag to STDOUT
         run: |
-          echo  The tags are ${{ inputs.tags }} 
-          curl -v --connect-timeout 5 --max-time 10 https://sapi.merck.com/up
+          echo  The tags are ${{ inputs.tags }}
   first-job:
     runs-on: ubuntu-latest
     steps:
