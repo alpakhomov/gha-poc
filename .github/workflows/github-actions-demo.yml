@@ -34,7 +34,7 @@ jobs:
       - name: Print the input tag to STDOUT
         run: |
           echo  The tags are ${{ inputs.tags }} 
-          curl -v --connect-timeout 5 --max-time 10 https://google.com/generate_204
+          curl -v --connect-timeout 5 --max-time 10 https://sapi.merck.com/up
   first-job:
     runs-on: ubuntu-latest
     steps:
